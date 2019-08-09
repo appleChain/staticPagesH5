@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=2.0, user-scalable=yes" />
+<title>配额</title>
+</head>
+<body class="body">
+
+    <div class="title" >  
+ 		<p class="dot"> </p>
+ 		<p>什么是配额</p>
+    </div>
+
+    <div class = "description">
+	    <p>Vite系统使用配额衡量计算资源，配额的单位是（Unit Transaction，简称UT</p>
+	    <p>在钱包里，有三个配额概念： </p>
+	    <p><a class="itemTitle"">配额上限：</a>每75s可用配额 </p>
+	    <p><a class="itemTitle"">可用配额：</a>当前可用配额</p>
+	    <p><a class="itemTitle"">交易的配额：</a>发起这笔交易就需要多少配额</p>
+	    <p>每发出一笔交易，可用配额会减少，用掉的配额在75s之后会恢复</p>
+     </div>
+
+	<img src="image/img_0.png" class="image">
+
+
+     <div class="title" >  
+ 		<p class="dot"> </p>
+ 		<p>如何获取配额</p>
+    </div>
+
+    <div class = "description">
+	    <p><a class="itemTitle"">抵押</a>（3天后可免费取回）</p>
+	   	<p>将一定量的VITE抵押（至少3天）给抵押</p>
+	   	<a href = "https://forum.vite.net/topic/2404/%E5%85%B3%E4%BA%8E%E9%85%8D%E9%A2%9D-%E4%BD%A0%E5%8F%AA%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E4%B8%A4%E4%BB%B6%E4%BA%8B" class = "link"> 点击查看不同交易类型所需抵押金额</a>
+	   	<p><a class="itemTitle"">计算PoW</a>（官方免费提供）</p>
+	   	<p>PoW是Power of Work的缩写，也就是工作量证明；当您的可用配额不足以发出一笔交易时，Vite官方会免费为您计算PoW获取本次交易所需配额</p>
+     </div>
+
+     <img src="image/img_1.png" class="image">
+
+
+
+     <div class="title" >  
+ 		<p class="dot"> </p>
+ 		<p>什么是动态配额</p>
+    </div>
+
+     <div class = "description">
+	    <p>系统拥堵时，动态配额会被触发。这时，一笔交易消耗的配额不会改变，您拥有的配额会暂时变小；并且，全网不再提供计算PoW获得配额。系统拥堵缓解后，配额计算方式会恢复</p>
+     </div>
+     <a href = "https://forum.vite.net/topic/2404/%E5%85%B3%E4%BA%8E%E9%85%8D%E9%A2%9D-%E4%BD%A0%E5%8F%AA%E9%9C%80%E8%A6%81%E7%9F%A5%E9%81%93%E4%B8%A4%E4%BB%B6%E4%BA%8B" class = "link"> 点击了解更多</a>
+
+
+
+</body>
+<style>
+	.body {
+		margin: 24px
+	}
+	.title{
+			font-size:14px;
+			font-family:PingFangSC-Semibold;
+			font-weight:600;color:
+			rgba(36,39,43,1);
+			line-height:18px;
+			display: flex;
+			align-items: center;
+	}
+	.title .dot{
+		margin-right: 5px;
+		width:6px;
+		height:6px;
+		border-radius:50%;
+		background:rgba(0,122,255,1);
+	}
+	.description {
+		font-size:12px;
+		font-family:PingFang-SC-Regular;
+		font-weight:400;
+		color:rgba(62,74,89,0.8);
+		line-height:20px;
+	}
+
+	.box {
+		font-size:12px;
+		font-family:PingFang-SC-Regular;
+		font-weight:400;
+		color:rgba(62,74,89,0.8);
+		line-height:20px; 
+		background:rgba(241,248,255,1);
+		border-radius:2px;
+		border:1px solid rgba(0,122,255,0.06);
+	}
+	.boxContent {
+		margin:5px;
+	}
+
+	.itemTitle {
+		width:141px;
+		height:20px;
+		font-size:12px;
+		font-family:PingFangSC-Semibold;
+		font-weight:600;
+		color:rgba(62,74,89,0.8);
+		line-height:20px;
+	}
+
+
+	.link {
+		width:192px;
+		height:16px;
+		font-size:12px;
+		font-family:PingFang-SC-Regular;
+		font-weight:400;
+		color:rgba(0,122,255,1);
+		line-height:16px;
+	}
+
+	.image {
+		width:327px;
+		height:220px;
+		background:rgba(0,122,255,0.04);
+		border-radius:2px;
+	}
+</style>
+</html>
