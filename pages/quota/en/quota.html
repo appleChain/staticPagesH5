@@ -9,16 +9,16 @@
 
     <div class="title" >  
  		<p class="dot"> </p>
- 		<p>什么是配额</p>
+ 		<p>What is Quota?</p>
     </div>
 
     <div class = "description">
-	    <p>Vite系统使用配额衡量计算资源，配额的单位是（Unit Transaction，简称UT</p>
-	    <p>在钱包里，有三个配额概念： </p>
-	    <p><a class="itemTitle"">配额上限：</a>每75s可用配额 </p>
-	    <p><a class="itemTitle"">可用配额：</a>当前可用配额</p>
-	    <p><a class="itemTitle"">交易的配额：</a>发起这笔交易就需要多少配额</p>
-	    <p>每发出一笔交易，可用配额会减少，用掉的配额在75s之后会恢复</p>
+	    <p>Quota is used to measure computing resources in the Vite system. The unit of quota is Unit Transaction, or UT for short.</p>
+	    <p>In the Wallet, there are three Quota-related terms: </p>
+	    <p><a class="itemTitle"">Quota Limit: </a>Maximum quota a user can get for a certain period of time.</p>
+	    <p><a class="itemTitle"">Spendable Quota: </a>Quota that can be used to send transactions at the moment</p>
+	    <p><a class="itemTitle"">Quota(of a Transaction): </a>How huch quota is needed to send this transaction</p>
+	    <p>Every sent transaction causes spendable quota to decrease, spendable quota cost will recover after a period of time.</p>
      </div>
 
 	<img src="image/img_0.png" class="image">
@@ -26,15 +26,15 @@
 
      <div class="title" >  
  		<p class="dot"> </p>
- 		<p>如何获取配额</p>
+ 		<p>How to Get Quota?</p>
     </div>
 
     <div class = "description">
-	    <p><a class="itemTitle"">抵押</a>（3天后可免费取回）</p>
-	   	<p>将一定量的VITE抵押（至少3天）给抵押</p>
-	   	<a href = "https://forum.vite.net/topic/2405/two-things-you-need-to-know-about-quota" class = "link"> 点击查看不同交易类型所需抵押金额</a>
-	   	<p><a class="itemTitle"">计算PoW</a>（官方免费提供）</p>
-	   	<p>PoW是Power of Work的缩写，也就是工作量证明；当您的可用配额不足以发出一笔交易时，Vite官方会免费为您计算PoW获取本次交易所需配额</p>
+	    <p><a class="itemTitle"">Staking</a>（You may withdraw staking for free 3 days later）</p>
+	   	<p>You get quota by staking VITE. The more you stake, the more quota you get.</p>
+	   	<a href = "https://forum.vite.net/topic/2405/two-things-you-need-to-know-about-quota" class = "link"> Click to check staking amount needed in different transaction scenarios </a>
+	   	<p><a class="itemTitle"">PoW Compution</a>（（No staking required; Vite pays for the computation cost）</p>
+	   	<p>PoW is short for Power of Work; When your quota from staking is insufficient for a transaction, Vite will spend its resources to compute PoW and get you the quota necessary for this transaction.</p>
      </div>
 
      <img src="image/img_1.png" class="image">
@@ -43,13 +43,13 @@
 
      <div class="title" >  
  		<p class="dot"> </p>
- 		<p>什么是动态配额</p>
+ 		<p>What is Dynamic Quota?</p>
     </div>
 
      <div class = "description">
-	    <p>系统拥堵时，动态配额会被触发。这时，一笔交易消耗的配额不会改变，您拥有的配额会暂时变小；并且，全网不再提供计算PoW获得配额。系统拥堵缓解后，配额计算方式会恢复</p>
+	    <p>When too many transactions simultaneously take place, Dynamic Quota mode will kick in. In this mode, the quota amount required for a transaction won’t change; however, your Quota Limit will be temporarily reduced; also, during this time, you won’t be able to get quota from PoW. When network traffic clears up, your Quota Limit will go back to its original level.</p>
      </div>
-     <a href = "https://forum.vite.net/topic/2405/two-things-you-need-to-know-about-quota" class = "link"> 点击了解更多</a>
+     <a href = "https://forum.vite.net/topic/2405/two-things-you-need-to-know-about-quota" class = "link"> Click to learn more</a>
 
 
 
