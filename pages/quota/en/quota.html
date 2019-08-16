@@ -14,11 +14,11 @@
 
     <div class = "description">
 	    <p style="margin:0 auto">Quota is used to measure computing resources in the Vite system. The unit of quota is Unit Transaction, or UT for short.</p>
-	    <p>In the Wallet, there are three Quota-related terms: </p>
-	    <p><a class="itemTitle"">Quota Limit: </a>Maximum quota a user can get for a certain period of time.</p>
-	    <p><a class="itemTitle"">Spendable Quota: </a>Quota that can be used to send transactions at the moment.</p>
-	    <p><a class="itemTitle"">Quota(of a Transaction): </a>How huch quota is needed to send this transaction.</p>
-	    <p>Every sent transaction causes spendable quota to decrease, spendable quota cost will recover after a period of time.</p>
+	    <p >In the Wallet, there are three Quota-related terms: </p>
+	    <p ><a class="itemTitle"">Quota Limit: </a>Maximum quota a user can get for a certain period of time.</p>
+	    <p ><a class="itemTitle"">Spendable Quota: </a>Quota that can be used to send transactions at the moment.</p>
+	    <p ><a class="itemTitle"">Quota(of a Transaction): </a>How huch quota is needed to send this transaction.</p>
+	    <p >Every sent transaction causes spendable quota to decrease, spendable quota cost will recover after a period of time.</p>
      </div>
 
 	<img src="image/img_0.png" class="image">
@@ -30,11 +30,11 @@
     </div>
 
     <div class = "description">
-	    <p><a class="itemTitle"">Staking</a>（You may withdraw staking for free 3 days later）</p>
-	   	<p>You get quota by staking VITE. The more you stake, the more quota you get.</p>
+	    <p ><a class="itemTitle"">Staking</a>（You may withdraw staking for free 3 days later）</p>
+	   	<p >You get quota by staking VITE. The more you stake, the more quota you get.</p>
 	   	<a href = "https://forum.vite.net/topic/2405/two-things-you-need-to-know-about-quota" class = "link"> Click to check staking amount needed in different transaction scenarios </a>
-	   	<p><a class="itemTitle"">PoW Compution</a>(No staking required; Vite pays for the computation cost）</p>
-	   	<p>PoW is short for Power of Work; When your quota from staking is insufficient for a transaction, Vite will spend its resources to compute PoW and get you the quota necessary for this transaction.</p>
+	   	<p ><a class="itemTitle"">PoW Compution</a>(No staking required; Vite pays for the computation cost）</p>
+	   	<p >PoW is short for Power of Work; When your quota from staking is insufficient for a transaction, Vite will spend its resources to compute PoW and get you the quota necessary for this transaction.</p>
      </div>
 
      <img src="image/img_1.png" class="image">
@@ -43,11 +43,11 @@
      <br style="height: 20px">
      <div class="title" >  
  		<p class="dot"> </p>
- 		<p>What is Dynamic Quota?</p>
+ 		<p >What is Dynamic Quota?</p>
     </div>
 
      <div class = "description">
-	    <p>When too many transactions simultaneously take place, Dynamic Quota mode will kick in. In this mode, the quota amount required for a transaction won’t change; however, your Quota Limit will be temporarily reduced; also, during this time, you won’t be able to get quota from PoW. When network traffic clears up, your Quota Limit will go back to its original level.</p>
+	    <p >When too many transactions simultaneously take place, Dynamic Quota mode will kick in. In this mode, the quota amount required for a transaction won’t change; however, your Quota Limit will be temporarily reduced; also, during this time, you won’t be able to get quota from PoW. When network traffic clears up, your Quota Limit will go back to its original level.</p>
      </div>
      <a href = "https://forum.vite.net/topic/2405/two-things-you-need-to-know-about-quota" class = "link"> Click to learn more</a>
 
@@ -79,7 +79,6 @@
 		font-family:PingFang-SC-Regular;
 		font-weight:400;
 		color:rgba(62,74,89,0.8);
-		line-height:20px;
 	}
 
 	.box {
@@ -118,10 +117,14 @@
 	}
 
 	.image {
-		width:327px;
-		height:220px;
+		width:100%;
+		height: auto;
 		background:rgba(0,122,255,0.04);
 		border-radius:2px;
+	}
+	p {
+		    margin-block-start: 3px;
+		    margin-block-end: 3px;
 	}
 </style>
 </html>
